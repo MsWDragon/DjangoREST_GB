@@ -17,6 +17,7 @@ class Command(BaseCommand):
         for user in users:
             new_user = user['fields']
             User(
+                pk=user['pk'],
                 username=new_user['username'],
                 first_name=new_user['first_name'],
                 last_name=new_user['last_name'],
