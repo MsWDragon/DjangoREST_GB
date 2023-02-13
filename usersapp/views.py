@@ -1,8 +1,7 @@
-from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 
-from .models import User
-from .serializers import UserModelSerializer
+from usersapp.models import User
+from usersapp.serializers import UserModelSerializer
 
 
 class UserModelViewSet(ModelViewSet):
