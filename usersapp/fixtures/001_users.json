@@ -1,0 +1,182 @@
+[
+  {
+    "model": "usersapp.user",
+    "pk": 1,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sidr",
+      "first_name": "Sidr",
+      "last_name": "Sidorov",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:28:37.966Z",
+      "email": "sidr@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 2,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vanya",
+      "first_name": "Ivan",
+      "last_name": "Ivanov",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:32:07.669Z",
+      "email": "ivan@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 3,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "petya",
+      "first_name": "Petr",
+      "last_name": "Petrov",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:33:35.161Z",
+      "email": "petr@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 4,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sergey",
+      "first_name": "Sergey",
+      "last_name": "Sergeev",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:33:35.161Z",
+      "email": "sergey@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 5,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "misha",
+      "first_name": "Michail",
+      "last_name": "Michailov",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:28:37.966Z",
+      "email": "misha@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 6,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tanya",
+      "first_name": "Tatiana",
+      "last_name": "Tatianina",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:32:07.669Z",
+      "email": "tanya@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 7,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "olya",
+      "first_name": "Olga",
+      "last_name": "Olgeeva",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:33:35.161Z",
+      "email": "olya@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 8,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "evgen",
+      "first_name": "Evgeniy",
+      "last_name": "Evgeev",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:33:35.161Z",
+      "email": "evgen@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 9,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mashka",
+      "first_name": "Maria",
+      "last_name": "Marieva",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:33:35.161Z",
+      "email": "mashka@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "usersapp.user",
+    "pk": 10,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "archy",
+      "first_name": "Artur",
+      "last_name": "Arturov",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-02-27T23:33:35.161Z",
+      "email": "archy@local.host",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
