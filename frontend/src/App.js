@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import axios from "axios";
-import Header from "./components/Header";
+import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
 import UserList from "./components/Users";
 
@@ -14,9 +14,9 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://127.0.0.1:8000/api/usersapp/').then(response => {
+        axios.get('http://127.0.0.1:8000/api/users/').then(response => {
             const users = response.data;
-            this.setState({'users': users});
+            this.setState({'users': users.results});
         }).catch(
             error => console.log(error)
         );
@@ -25,7 +25,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
+                <NavMenu/>
                 <UserList users={this.state.users}/>
                 <Footer/>
             </div>
