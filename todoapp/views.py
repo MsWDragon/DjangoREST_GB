@@ -17,7 +17,7 @@ class ProjectCustomDjangoFilterModelViewSet(ModelViewSet):
     filterset_class = ProjectFilter
 
 
-class ToDoCastomDjangoFilterModelViewSet(ModelViewSet):
+class ToDoCustomDjangoFilterModelViewSet(ModelViewSet):
     queryset = ToDo.objects.all()
     serializer_class = ToDoSerializer
     pagination_class = ToDoPageNumberPagination

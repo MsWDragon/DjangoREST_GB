@@ -5,6 +5,7 @@ from todoapp.models import Project, ToDo
 
 class ProjectSerializer(ModelSerializer):
     users = StringRelatedField(many=True)
+    admin_user = StringRelatedField()
 
     class Meta:
         model = Project
