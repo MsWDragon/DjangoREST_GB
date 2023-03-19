@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDiagramProject, faListCheck, faUsers, faUser} from "@fortawesome/free-solid-svg-icons";
 
 
-const NavMenu = ({auth, logout}) => {
+const NavMenu = ({auth, logout, filterString}) => {
     return (
         <nav className="navbar navbar-dark bg-dark pb-0 mb-4 text-white">
             <div className="container">
@@ -28,7 +28,7 @@ const NavMenu = ({auth, logout}) => {
                 </ul>
                 <div className="d-flex align-items-center w-50">
                     <form className="w-100 mb-1">
-                        <input type="search" className="form-control" placeholder="Поиск..." aria-label="Search"/>
+                        <input onChange={(event) => filterString(event.target.value)} type="search" className="form-control" placeholder="Поиск..." aria-label="Search"/>
                     </form>
                 </div>
                 <ul className="nav nav-tabs nav-dark">

@@ -11,7 +11,7 @@ const TodoItem = ({task}) => {
     );
 };
 
-const TodoList = ({tasks}) => {
+const TodoList = ({tasks, projects, users}) => {
     return (
         <div className="container">
             <table className="table table-striped">

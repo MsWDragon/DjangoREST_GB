@@ -1,13 +1,15 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 
-// const UsersList = (user) => {
-//     return (<div>{user}</div>);
-// };
 
-const ProjectInfo = (projects) => {
+const ProjectInfo = ({projects, users}) => {
     const {projectId} = useParams();
-    const project = projects.projects.find(prj => prj.id === Number(projectId));
+    const project = projects.find((project) => project.id === Number(projectId));
+
+    function handleUserString(userId) {
+        const user = users.find(users => users.id === Number(userId))
+        return user.firstName + ' ' + user.lastName
+    }
 
     return (
         <div className="container">
@@ -23,7 +25,7 @@ const ProjectInfo = (projects) => {
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                          data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            {project.adminUser}
+                            {handleUserString(project.adminUser)}
                         </div>
                     </div>
                 </div>
@@ -51,9 +53,9 @@ const ProjectInfo = (projects) => {
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
                          data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            {project.users}
-                            {/*{project.users.forEach(user => '<div>' + user + '</div>')}*/}
-                            {/*{project.users.map((user) => <UsersList user={user}/>)}*/}
+                            <ul className="list-unstyled">
+                                {project.users.map((user) => <li>{handleUserString(user)}</li>)}
+                            </ul>
                         </div>
                     </div>
                 </div>
